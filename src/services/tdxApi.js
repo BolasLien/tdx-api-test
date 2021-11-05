@@ -5,7 +5,6 @@ function getAuthorizationHeader() {
   //  填入自己 ID、KEY 開始
   let AppID = import.meta.env.VITE_APP_ID
   let AppKey = import.meta.env.VITE_APP_KEY
-  console.log(`appid:${AppID}`)
   //  填入自己 ID、KEY 結束
   let GMTString = new Date().toGMTString()
   let ShaObj = new jsSHA('SHA-1', 'TEXT')
